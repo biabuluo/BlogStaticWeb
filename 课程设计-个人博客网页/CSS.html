@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于css</title>
+    <link type="text/css" rel="stylesheet" href="./css/aboutme.css">
+    <link type="text/css" rel="stylesheet" href="./css/header_footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/short_banner.css">
+</head>
+<body>
+    <body>
+        <!-- 页眉区 -->
+        <header class="header" id="header_af_login">
+            <h3>小宇の万事屋</h3>
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="./main.html">home</a>
+                <a href="./aboutme.html">about</a>
+                <a href="./categories.html">categories</a>
+                <a href="./photos.html">photos</a>
+                <a href="./music.html">music</a>
+                <a href="./bilibili.html">bilibili</a>
+            </nav>
+            <a href="./login.html">exit</a>
+        </header>
+        
+        <header class="header" id="header_bf_login">
+            <h3>小宇の万事屋</h3>
+            <!-- 首页导航栏！ -->
+            <nav class="navbar">
+                <a href="./login.html">login</a>
+                <a href="./aboutme.html">about</a>
+                <a href="./posts.html">public</a>
+            </nav>
+        </header>
+
+        <!-- banner块 -->
+        <section class="banner" id="banner"></section>
+    
+        <!-- post标题+日期等 -->
+        <section class="post_info">
+            <h1 class="title">关于css</h1>
+            <h3 class="date">2023/5/17</h3>
+            <h4 class="description">学习css笔记</h4>
+        </section>
+    
+        <!-- 正文部分 -->
+        <!-- 按一行两列布局：左边正文 右边为节 -->
+        <section class="post">
+            <!-- 正文 -->
+            <div class="post_content">
+                <h4><a name="what">什么是CSS</a></h4>
+                <p>通俗来讲，HTML是对网页的界面进行结构布局的，但是光有布局还远远不够，还需要对布局进行美化，CSS就可以达到对网页界面美化的效果，让界面更加地美观</p>
+                <p>&#11088;CSS指层叠样式表（Cascading Style Sheets）</p>
+                <p>&#11088;样式定义如何显示HTML元素</p>
+                <p>&#11088;样式通常储存在样式表中</p>
+                <p>&#11088;把样式添加到HTML 4.0中，是为了解决内容与表现分离的问题</p>
+                <p>&#11088;外部样式表可以极大提高工作效率</p>
+                <p>&#11088;外部样式表通常储存在CSS文件中</p>
+                <p>&#11088;多个样式定义可层叠为一个</p>
+                <h4><a name="bg">CSS背景</a></h4>
+                <p>CSS 背景属性用于定义HTML元素的背景。</p>
+                <p>CSS属性定义背景的效果，以下为背景的常用属性值：</p>
+                <p>&#11088;backgound-color</p>
+                <p>&#11088;backgound-image</p>
+                <p>&#11088;backgound-repeat</p>
+                <p>&#11088;backgound-attachment</p>
+                <p>&#11088;backgoound-position</p>
+                <p>&#10071;背景颜色:
+                    background-color 属性定义了元素的背景颜色.
+                    页面的背景颜色使用在body的选择器中:</p>
+                <p><br>body{backgound-color:#b0c4de}<br><br></p>
+                <p>&#10071;背景图像:
+                    background-image 属性描述了元素的背景图像.
+                    
+                    默认情况下，背景图像进行平铺重复显示，以覆盖整个元素实体.</p>
+                <p>
+                    &#10071;常用背景属性:
+                    在实际的开发当中，我们常常要使背景图片居中对齐，并且铺满整个块元素。我们常做如下的设置：
+
+                    <br><br>.fakeimg {<br>
+                    background-image: url(..jpg);<br>
+                    background-size: cover;<br>
+                    background-position: center;<br>
+                    }<br>
+                </p>
+
+                <h4><a name="selector">CSS选择器</a></h4>
+                <p>如果你要在HTML元素中设置CSS样式，你需要在元素中设置"id" 和 "class"选择器。</p>
+                <p>&#10071;id选择器：</p>
+                <p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
+                <p>HTML元素以id属性来设置id选择器,CSS 中 id 选择器以 "#" 来定义。</p>
+                <p>以下的样式规则应用于元素属性 id="para1":</p>
+                <p>&#10071;class选择器:</p>
+                <p>class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。</p>
+                <p>class 选择器在HTML中以class属性表示, 在 CSS 中，类选择器以一个点"."号显示：</p>
+                <h4><a name="create">CSS创建</a></h4>
+                <p>插入样式表的方法有三种:</p>
+                <p>&#11088;外部样式表(External style sheet)</p>
+                <p>&#11088;内部样式表(Internal style sheet)</p>
+                <p>&#11088;内联样式(Inline style).</p>
+                <h4><a name="rule">CSS语法</a></h4>
+                <p>CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明:</p>
+                <p>&#11088;选择器通常是您需要改变样式的 HTML 元素。</p>
+                <p>&#11088;每条声明由一个属性和一个值组成。</p>
+                <p>&#11088;属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。</p>
+                <p>&#11088;CSS注释：</p>
+                <p>注释是用来解释你的代码，并且可以随意编辑它，浏览器会忽略它。</p>
+                <p>CSS注释以 "/*" 开始, 以 "*/" 结束</p>
+                <h4><a name="text">CSS文本</a></h4>
+                <p>颜色属性被用来设置文字的颜色。</p>
+                <p>颜色是通过CSS最经常的指定：</p>
+                <p>&#11088;十六进制值 - 如: ＃FF0000</p>
+                <p>&#11088;一个RGB值 - 如: RGB(255,0,0)</p>
+                <p>&#11088;颜色的名称 - 如: red</p>
+            </div>
+            <!-- 章节 -->
+            <div class="post_marked">
+                <div class="p_box">
+                    <h3 class="paragraph">索引</h3>
+                    <div class="index">
+                        <a href="#what"> 什么是CSS <span>1</span></a>
+                        <a href="#bg"> CSS背景 <span>2</span> </a>
+                        <a href="#selector">CSS选择器 <span>3</span> </a>
+                        <a href="#create"> CSS创建 <span>4</span> </a>
+                        <a href="#rule"> CSS语法 <span>5</span> </a>
+                        <a href="#text"> CSS文本 <span>6</span> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 页脚 -->
+        <footer>
+            <div class="credit">created by <span>小宇</span> | 暨南大学 软件工程 2020101642</div>    
+        </footer>
+    </body>
+</body>
+<script type="text/javascript" src="./js/changenav.js"></script>
+</html>

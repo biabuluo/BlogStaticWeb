@@ -1,0 +1,12 @@
+/* banner */
+.banner{
+    min-height: 30vh;
+    background-image: url(../resource/images/background.png);
+    /* 图片不随滚动 */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    place-items: center;
+}

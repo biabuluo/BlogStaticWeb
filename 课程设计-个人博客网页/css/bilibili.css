@@ -1,0 +1,152 @@
+/* 轮播图 */
+.slider{
+    /* 不加这个overflow没用 */
+    position: relative;
+    height: 400px;
+    width: 100%;
+    /* 超过内容隐藏 */
+    overflow-x: hidden;
+}
+.slider .images{
+    width: 300%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    list-style: none;
+}
+.slider .images .img{
+    width: 100%;
+    height: 400px;
+}
+/* :nth-child(an+b) 这个 CSS 伪类首先找到所有
+当前元素的兄弟元素，然后按照位置先后顺序从 1 开始排序， */
+.images .img:nth-child(1){
+    background-image: url(../resource/slider_p/1.jpg);
+}
+.images .img:nth-child(2){
+    background-image: url(../resource/slider_p/2.jpg);
+}
+.images .img:nth-child(3){
+    background-image: url(../resource/slider_p/3.png);
+}
+
+/* 两个按钮 */
+.btn{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.btn_left,
+.btn_right{
+    font-size: 50px;
+    background-color: #aaa9a9;
+    opacity: 0.3;
+    padding: 0 20px;
+    padding-top: 160px;
+    cursor: pointer;
+}
+
+/* 页面标题 */
+.title{
+    margin-top: 25px;
+    margin-left: 320px;
+}
+.title h1{
+    font-size: 50px;
+    color: #1E3E3F;
+    display: flex;
+    flex-direction: row;
+}
+.title h3{
+    margin-top: 20px;
+    font-size: larger;
+    color: #ffa9a9;
+    margin-bottom: 20px;
+}
+
+/* 开始结束节点 */
+.dot{
+    background-color: #ffff;
+    color: #1E3E3F;
+    padding: 10px;
+    font-size: 30px;
+    width: 10%;
+    position: relative;
+    left: 47%;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+#past{
+    margin-bottom: 100px;
+}
+
+/* 时间轴 */
+.content .timeline{
+    padding: 20px;
+}
+.content .timeline .item{
+    /* 外边距塌陷：margin转移到外边 */
+    margin: 30px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-around;
+}
+.content .timeline .item .left,
+.content .timeline .item .right{
+    display: flex;
+    height: 70%;
+    width: 40%;
+    padding: 10px;
+}
+.left img,
+.right img{
+    height: 120px;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.left .text .name,
+.right .text .name{
+    color: #ffa9a9;
+    margin-bottom: 5px;
+}
+.left .text .des,
+.right .text .des{
+    color: #1E3E3F;
+}
+.content .timeline .item .center{
+    background-color: #ffff;
+    color: #1E3E3F;
+    padding: 10px;
+    font-size: 30px;
+    width: 10%;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: 20px;
+}
+
+
+/* 时间轴中间线 */
+.content{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.content .line{
+    position: absolute;
+    left: 52%;
+    width: 5px;
+    height: 100%;
+    background-color: #1E3E3F;
+    z-index: -99;
+    /* 底层展示 */
+}

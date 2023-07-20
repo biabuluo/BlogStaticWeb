@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posts列表</title>
+    <!-- 外部样式表 -->
+    <link type="text/css" rel="stylesheet" href="./css/posts.css">
+    <link type="text/css" rel="stylesheet" href="./css/header_footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/short_banner.css">
+</head>
+<body>
+        <!-- 页眉区 -->
+        <header class="header" id="header_af_login">
+            <h3>小宇の万事屋</h3>
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="./main.html">home</a>
+                <a href="./aboutme.html">about</a>
+                <a href="./categories.html">categories</a>
+                <a href="./photos.html">photos</a>
+                <a href="./music.html">music</a>
+                <a href="./bilibili.html">bilibili</a>
+            </nav>
+            <a href="./login.html">exit</a>
+        </header>
+        <header class="header" id="header_bf_login">
+            <h3>小宇の万事屋</h3>
+            <!-- 首页导航栏！ -->
+            <nav class="navbar">
+                <a href="./login.html">login</a>
+                <a href="./aboutme.html">about</a>
+                <a href="./posts.html">public</a>
+            </nav>
+        </header>
+        <!-- banner块 -->
+        <section class="banner" id="banner"></section>
+    
+        <!-- post标题+日期等 -->
+        <section class="name">
+            <h1 class="prompt">Posts List</h1>
+            <h4 class="description">文章列表</h4>
+        </section>
+        
+        <!-- 文章列表 -->
+        <section class="container">
+            <div class="postbox" id="html">
+                <img src="./resource/images/postimg.jpg" alt="" class="image">
+                <div class="post_info">
+                    <div class="date">
+                        <span>1st June, 2023</span>
+                    </div>
+                    <h3 class="title">html学习笔记</h3>
+                    <hr>
+                    <div class="text">
+                        <br>
+                        <p class="text1">一些关于我学习html的知识点</p>
+                        <p class="text2"></p> 
+                    </div>   
+                </div>
+             </div>
+
+             <div class="postbox" id="css">
+                <img src="./resource/images/postimg.jpg" alt="" class="image">
+                <div class="post_info">
+                    <div class="date">
+                        <span>1st June, 2023</span>
+                    </div>
+                    <h3 class="title">css学习笔记</h3>
+                    <hr>
+                    <div class="text">
+                        <br>
+                        <p class="text1">一些关于我学习css的知识点</p>
+                        <p class="text2"></p> 
+                    </div>   
+                </div>
+             </div>
+
+             <div class="postbox" id="js">
+                <img src="./resource/images/postimg.jpg" alt="" class="image">
+                <div class="post_info">
+                    <div class="date">
+                        <span>1st June, 2023</span>
+                    </div>
+                    <h3 class="title">javascript学习笔记</h3>
+                    <hr>
+                    <div class="text">
+                        <br>
+                        <p class="text1">一些关于我学习js的知识点</p>
+                        <p class="text2"></p> 
+                    </div>   
+                </div>
+             </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+            <div class="credit">created by <span>小宇</span> | 暨南大学 软件工程 2020101642</div>    
+        </footer>
+</body>
+<script type="text/javascript" src="./js/changenav.js"></script>
+<script type="text/javascript" src="./js/posts.js"></script>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bilibili追番表</title>
+    <!-- 外部样式表 -->
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/bilibili.css">
+    <link rel="stylesheet" type="text/css" href="./css/backtotop.css">
+</head>
+<body>
+    <!-- 页眉区 -->
+    <header class="header">
+        <h3>小宇の万事屋</h3>
+        <!-- navbar -->
+        <nav class="navbar">
+            <a href="./main.html">home</a>
+            <a href="./aboutme.html">about</a>
+            <a href="./categories.html">categories</a>
+            <a href="./photos.html">photos</a>
+            <a href="./music.html">music</a>
+            <a href="#">bilibili</a>
+        </nav>
+        <a href="./login.html">exit</a>
+    </header>
+
+    <!-- 轮播图 -->
+    <section class="slider">
+        <ul class="images">
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+        </ul>
+        <div class="btn">
+            <div class="btn_left"><</div>
+            <div class="btn_right">></div>
+        </div>
+    </section>
+
+    <section class="title">
+        <h1><img src="./resource/icons/bilibili.png">&nbsp;&nbsp;<span>bilibili</span></h1>
+        <h3>追番时间轴</h3>
+    </section>
+
+    <!-- 追番时间线 -->
+    <div class="dot"><span>now</span></div>
+    <section class="content">
+        <div class="line"></div>
+        <section class="timeline">
+
+            <div class="item">
+                <div class="left"></div>
+                <div class="center">
+                    <span>
+                        2023.5
+                    </span>
+                </div>
+                <div class="right">
+                    <img src="./resource/bilibili/skip_loafer.jpg">
+                    <div class="text">
+                        <h1 class="name">跃动青春</h1>
+                        <div class="des">岩仓美津未从乡下的小初中，她成绩优异，却与他人有着独特的距离感，稍显格格不入。
+                            她虽然偶尔会失败，但还是凭借天真的性格一点点打动班上的同学，
+                            这是个偶有杂音却能让人不知不觉快乐起来的校园生活喜剧！</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="left">
+                    <div class="text">
+                        <h1 class="name">铃芽之旅</h1>
+                        <div class="des">生活在日本九州田舍的17岁少女・铃芽遇见了为了寻找“门”而踏上旅途的青年。
+                            据说，开着的门必须关上，否则灾祸将会从门的那一边降临于现世。
+                            星星，夕阳，拂晓，误入之境的天空，仿佛溶解了一切的时间。
+                            在神秘之门的引导下，铃芽踏上了关门的旅途。</div>
+                    </div>
+                    <img src="./resource/bilibili/linya.jpg">
+                </div>
+                <div class="center">
+                    <span>
+                        2023.4
+                    </span>
+                </div>
+                <div class="right">
+                    <img src="./resource/bilibili/鬼灭.webp">
+                    <div class="text">
+                        <h1 class="name">鬼灭之刃 刀匠村篇</h1>
+                        <div class="des">即将成为本作故事舞台的是――――
+                            炭治郎正在前往的目的地「锻刀村」。
+                            随着与鬼杀队最强剑士——霞柱・时透无一郎以及恋柱・甘露寺蜜璃等人的再度相会，鬼影也已悄然逼近！
+                            炭治郎等人的全新战斗就此展开！</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+    <div class="dot" id="past"><span>past</span></div>
+
+    <!-- 回到顶部小火箭 -->
+    <div class="backtotop">
+        <img src="./resource/icons/发布_面24 (1).png" alt="">
+    </div>
+
+    
+    <!-- 页脚 -->
+    <footer>
+        <div class="credit">created by <span>小宇</span> | 暨南大学 软件工程 2020101642</div>    
+    </footer>
+</body>
+
+    <!-- 外部js文件 -->
+    <script type="text/javascript" src="./js/slider.js"></script>
+    <script type="text/javascript" src="./js/backtotop.js"></script>
+</html>

@@ -1,0 +1,124 @@
+
+hr {
+    margin-top: 10px;
+}
+
+/* 首页图片区 */
+.banner{
+    min-height: 80vh;
+    background-image: url(../resource/images/background.png);
+    /* 图片不随滚动 */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    place-items: center;
+}
+.banner .banner_box{
+    position: absolute;
+    left: 30%;
+    height: 65%;
+    width: 40%;
+    text-align: center;
+    background-color: aliceblue;
+    opacity: 0.8;
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.banner .banner_box h3{
+    margin-top: 150px;
+    font-size: 4rem;
+    color: #1E3E3F;
+}
+
+.banner .banner_box p{
+    margin-top: 20px;
+    font-size: 1.7rem;
+    color: #1E3E3F;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+.banner .banner_box span{
+    margin-left: 100px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+}
+/* 主要部分-左部 */
+.container .left{
+    width: 70%;
+    display: flex;
+    /* 竖向排列 */
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container .left .postbox{
+    display: flex;
+    flex-direction: row;
+    width:90%;
+    padding: 10px;
+    background:#fff;
+    border-radius: 30px;
+    border-color: #aaa9a9;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.container .left .postbox img{
+    width: 150px;
+    border-radius: 30px;
+}
+.container .left .postbox .post_info{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+}
+.container .left .postbox .post_info .date{
+    color: #ffa9a9;
+}
+.container .left .postbox .text{
+    margin: 20px;
+}
+
+
+/* 主要部分-右部 */
+.container .right{
+    width: 30%;
+    padding: 50px;
+}
+.container .right .id_card{
+    position: sticky;
+    top: 20vh;
+    width: 90%;
+    height: 300px;
+    background-color: #f3c0c0;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .right .id_card .photo{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.container .right .id_card .mylinks{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+

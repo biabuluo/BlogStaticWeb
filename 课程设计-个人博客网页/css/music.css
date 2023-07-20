@@ -1,0 +1,132 @@
+/* 背景 */
+.background{
+    /* 设置背景图片：不重叠填充、图片居中、缩放背景以完全覆盖 */    
+    background-image: url("../resource/images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 元素高度宽度填充整个屏幕 */
+    height: 100vh;
+    width: 100%;
+    /* 背景模糊 */
+    filter: blur(40px);
+}
+
+/* 播放器控制面板 */
+.music_box{
+    position: absolute;
+    top: 200px;
+    height: 500px;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #1E3E3F;
+    border-radius: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: azure;
+}
+/* 左边 */
+.music_box .left{
+    width: 50%;
+    height: 100%;
+}
+
+.music_box .left .logo{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.music_box .left .logo img{
+    height: 30px;
+}
+
+.music_box .left .music_picture{
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 350px;
+    height: 250px;
+    background-image: url('../resource/images/form.png'); 
+    background-size: cover;
+    border-radius: 30px;
+}
+.volunm{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 30px;
+    place-items: center;
+}
+.volunm .value{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #3b797b;
+    margin-right: 20px;
+}
+
+
+/* 右边 */
+.music_box .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.music_box .right h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.music_box .control_btn{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.control_btn .last,
+.control_btn .next{
+    padding: 10px;
+    background-color: #3b797b;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.control_btn .last:hover,
+.control_btn .next:hover{
+    padding: 10px;
+    background-color: #183132;
+    border-radius: 30px;
+}
+
+.control_btn .pause img{
+    height: 50px;
+    cursor: pointer;
+}
+.music_box .auto{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #3b797b;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.music_box .auto img{
+    margin-left: 10px;
+    height: 20px;
+}
+
+/* 音乐播放器 */
+audio{
+    /* position: absolute;
+    left: 100px;
+    top: 100px; */
+    display: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>categories</title>
+    <!-- 外部样式表 -->
+    <link rel="stylesheet" type="text/css" href="./css/categories.css">
+    <link rel="stylesheet" type="text/css" href="./css/header_footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/short_banner.css">
+</head>
+<body>
+        <!-- 页眉区 -->
+        <header class="header">
+            <h3>小宇の万事屋</h3>
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="./main.html">home</a>
+                <a href="./aboutme.html">about</a>
+                <a href="#">categories</a>
+                <a href="./photos.html">photos</a>
+                <a href="./music.html">music</a>
+                <a href="./bilibili.html">bilibili</a>
+            </nav>
+            <a href="./login.html">exit</a>
+        </header>
+    
+        <!-- banner块 -->
+        <section class="banner" id="banner"></section>
+
+        <!-- 包括提示+搜索框 -->
+        <section class="helper">
+            <div class="prompt">
+                <h1>categories</h1>
+                <h4>博客分类</h4>
+            </div>
+            <div class="searchbar">
+                <input type="text" class="bar" placeholder="search...">
+                <a href="#" class="btn">
+                    <img src="./resource/icons/search.png">
+                </a>
+            </div>
+        </section>
+
+        <!-- 博客分类框 -->
+        <section class="content">
+            <div class="category_box" id="webstudy">
+                <h3>前端</h3>
+                <div class="info"><span class="date">2023/5/18</span>&nbsp;&nbsp;&nbsp;<span> by 小宇</span></div>
+                <img src="./resource/images/postimg.jpg">
+                <hr>
+                <h4><span>description:&nbsp;&nbsp;</span>html+css+js学习记录</h4>
+            </div>
+            <div class="category_box" id="study">
+                <h3>学习</h3>
+                <div class="info"><span class="date">2023/5/18</span>&nbsp;&nbsp;&nbsp;<span> by 小宇</span></div>
+                <img src="./resource/images/postimg.jpg">
+                <hr>
+                <h4><span>description:&nbsp;&nbsp;</span></h4>
+            </div>
+            <div class="category_box" id="life">
+                <h3>生活</h3>
+                <div class="info"><span class="date">2023/5/18</span>&nbsp;&nbsp;&nbsp;<span> by 小宇</span></div>
+                <img src="./resource/images/postimg.jpg">
+                <hr>
+                <h4><span>description:&nbsp;&nbsp;</span></h4>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+            <div class="credit">created by <span>小宇</span> | 暨南大学 软件工程 2020101642</div>    
+        </footer>
+</body>
+<script type="text/javascript" src="./js/categories.js"></script>
+</html>

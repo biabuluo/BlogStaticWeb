@@ -1,0 +1,65 @@
+/* 页面标题 */
+.title{
+    margin-top: 25px;
+    margin-left: 320px;
+}
+.title h1{
+    font-size: 50px;
+    color: #1E3E3F;
+}
+.title h3{
+    margin-top: 20px;
+    font-size: larger;
+    color: #ffa9a9;
+}
+
+/* 内容区 */
+.container{
+    margin-top: 40px ;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container .item{
+    margin-bottom: 30px;
+}
+.container h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #1E3E3F;
+}
+.container h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffa9a9;
+}
+.container .item hr{
+    margin-top: 30px;
+}
+
+
+/* 每个图片list */
+.container .picture_list{
+    display: flex;
+    margin-left: 140px;
+    width: 900px;
+    height: 300px;
+}
+.container .picture_list .p{
+    transition: .7s;
+    overflow: hidden;
+}
+.container .picture_list .p:hover{
+    flex-shrink: 0;
+    /* flex-basic: 定义flex元素的基本宽度-和width差不多 */
+    /* flex-grow：flex元素的基本宽度+剩余空白宽度的x等分=元素真正的宽度 */
+    /* flex-shrink: 差不多就是grow的反义词：超出的父容器的部分由每个元素平分 */
+}
+.container .picture_list .p img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    /* cover	被替换的内容大小保持其宽高比，同时填充元素的整个内容框。 
+    如果对象的宽高比与盒子的宽高比不匹配，该对象将被剪裁以适应。 */
+}

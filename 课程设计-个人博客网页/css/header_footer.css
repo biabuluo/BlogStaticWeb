@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* box-sizing属性定义如何计算元素总高度+宽度 */
+    /* border-box：元素宽度=边框+内边距 */
+    font-family: "poppins", sans-serif;
+    font-weight: bolder;
+}
+body{
+    background-color: #fbf9f9;
+}
+
+/* 顶部导航 */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    background-color: #aaa9a9;
+    opacity: 0.6;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 10000;
+    padding: 20px;
+}
+.header h3{
+    margin-left: 10px;
+}
+.header a{
+    position: relative;
+    margin-left: 500px;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: bolder;
+    /* 去掉下划线 */
+    text-decoration: none;
+}
+.header a:hover{
+    color:slategrey;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+}
+.navbar a{
+    position: relative;
+    margin-left: 60px;
+    font-size: 16px;
+    color: #ffff;
+    font-weight: bolder;
+    /* 去掉下划线 */
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: #ffa9a9;
+}
+
+
+/* 页脚 */
+footer{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: #ffa9a9;
+}

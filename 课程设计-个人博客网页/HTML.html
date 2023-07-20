@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于html</title>
+    <link type="text/css" rel="stylesheet" href="./css/aboutme.css">
+    <link type="text/css" rel="stylesheet" href="./css/header_footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/short_banner.css">
+</head>
+<body>
+    <body>
+        <!-- 页眉区 -->
+        <header class="header" id="header_af_login">
+            <h3>小宇の万事屋</h3>
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="./main.html">home</a>
+                <a href="./aboutme.html">about</a>
+                <a href="./categories.html">categories</a>
+                <a href="./photos.html">photos</a>
+                <a href="./music.html">music</a>
+                <a href="./bilibili.html">bilibili</a>
+            </nav>
+            <a href="./login.html">exit</a>
+        </header>
+    
+        <header class="header" id="header_bf_login">
+            <h3>小宇の万事屋</h3>
+            <!-- 首页导航栏！ -->
+            <nav class="navbar">
+                <a href="./login.html">login</a>
+                <a href="./aboutme.html">about</a>
+                <a href="./posts.html">public</a>
+            </nav>
+        </header>
+
+        <!-- banner块 -->
+        <section class="banner" id="banner"></section>
+    
+        <!-- post标题+日期等 -->
+        <section class="post_info">
+            <h1 class="title">关于HTML</h1>
+            <h3 class="date">2023/5/17</h3>
+            <h4 class="description">学习html笔记</h4>
+        </section>
+    
+        <!-- 正文部分 -->
+        <!-- 按一行两列布局：左边正文 右边为节 -->
+        <section class="post">
+            <!-- 正文 -->
+            <div class="post_content">
+                <h4><a name="what">什么是HTML</a></h4>
+                <p>HTML是用来描述网页布局的一种语言，它区别与程序设计语言，属于超文本标记语言</p>
+                <p>&#11088;HTML 指的是超文本标记语言: HyperText Markup Language</p>
+                <p>&#11088;HTML 不是一种编程语言，而是一种标记语言</p>
+                <p>&#11088;标记语言是一套标记标签 (markup tag)</p>
+                <p>&#11088;HTML 使用标记标签来描述网页</p>
+                <p>&#11088;HTML 文档包含了HTML 标签及文本内容</p>
+                <p>&#11088;HTML文档也叫做 web 页面</p>
+                <h4><a name="lebal">HTML标签</a></h4>
+                <p>HTML 标记标签通常被称为 HTML 标签 (HTML tag)</p>
+                <p>&#11088; HTML 标签是由尖括号包围的关键词，比如 &lthtml&gt</p>
+                <p>&#11088;HTML 标签通常是成对出现的，比如 &ltb&gt 和 &lt/b&gt</p>
+                <p>&#11088;标签对中的第一个标签是开始标签，第二个标签是结束标签</p>
+                <p>&#11088;开始和结束标签也被称为开放标签和闭合标签</p>
+                <h4><a name="element">HTML元素</a></h4>
+                <p>"HTML 标签" 和 "HTML 元素" 通常都是描述同样的意思。</p>
+                <p>但是严格来讲, 一个 HTML 元素包含了开始标签与结束标签</p>
+                <h4><a name="base">HTML基础</a></h4>
+                <p>&#11088;HTML 标题（Heading）是通过&lth1&gt - &lth6&gt 标签来定义的.</p>
+                <p>&#11088;HTML段落是通过标签&ltp&gt来定义的.</p>
+                <p>&#11088;HTML链接是通过标签&lta&gt来定义的.</p>
+                <p>&#11088;HTML图像是通过标签&ltimg&gt来定义的.</p>
+                <h4><a name="rule">HTML元素语法</a></h4>
+                <p>开始标签被称为起始标签(opening tag),结束标签常被称为闭合标签(closing tag)</p>
+                <p>&#11088;HTML元素是以开始标签起始的</p>
+                <p>&#11088;HTML元素以结束标签终止</p>
+                <p>&#11088;元素的内容是在开始标签与结束标签之间</p>
+                <p>&#11088;某些HTML元素的内容具有空内容（empty content）</p>
+                <p>&#11088;空元素在开始标签中进行关闭（以开始标签的结束而结束）</p>
+                <p>&#11088;大多数HTML元素可以拥有属性</p>
+                <p>&#10071;不要忘记结束标签:
+                    即使你忘记了使用结束标签，对于大多数浏览器也会正确地显示HTML</p>
+                <p>&#10071;HTML标签对大小不敏感：&ltP&gt等同于&ltp&gt。许多网站多使用大写的HTML标签</p>
+                <h4><a name="p">HTML段落语法</a></h4>
+                <p>段落是通过&ltp&gt标签来定义的。</p>
+                <p>&#11088;HTML折行:
+                    如果您希望在不产生一个新段落的情况下进行换行（新行），请使用 &ltbr&gt 标签：</p>
+                <p>&#11088;HTML输出
+                    我们无法确定 HTML 被显示的确切效果。屏幕的大小，以及对窗口的调整都可能导致不同的结果。
+                    对于 HTML，您无法通过在 HTML 代码中添加额外的空格或换行来改变输出的效果。
+                    当显示页面时，浏览器会移除源代码中多余的空格和空行。所有连续的空格或空行都会被算作一个空格。需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。</p>
+                <h4><a name="attr">HTML属性</a></h4>
+                <p>HTML元素可以设置属性</p>
+                <p>&#11088;属性可以在元素中添加附加信息</p>
+                <p>&#11088;属性一般描述于开始标签</p>
+                <p>&#11088;属性总是以名称/值对的形式出现，比如：name="value"。</p>
+                <p>&#10071;HTML属性常用引用属性值:
+                    属性值应该始终被包括在引号内。
+                    双引号是最常用的，不过使用单引号也没有问题。</p>
+                <p>&#10071;使用小写属性:
+                    属性和属性值对大小写不敏感
+                    不过，万维网联盟在其HTML4推荐标准中推荐小写的属性/属性值。
+                    而新版本的（X）HTML要求使用小写属性。</p>
+                <h4><a name="title">HTML标题</a></h4>
+                <p>标题（Heading）是通过&lth1&gt-&lth6&gt标签来定义的。</p>
+                <p>&#11088;HTML注释:
+                    可以将注释插入 HTML 代码中，这样可以提高其可读性，使代码更易被人理解。浏览器会忽略注释，也不会显示它们。</p>
+                <p>&#11088;HTML提示-如何使用查看源代码:
+                    你是否看过一些网页然后惊叹它是如何实现的的。
+                    如果您想找到其中的奥秘，只需要单击右键，然后选择"查看源文件"（IE）或"查看页面源代码"（Firefox），其他浏览器的做法也是类似的。这么做会打开一个包含页面 HTML 代码的窗口。</p>
+    
+            </div>
+            <!-- 章节 -->
+            <div class="post_marked">
+                <div class="p_box">
+                    <h3 class="paragraph">索引</h3>
+                    <div class="index">
+                        <a href="#what"> 什么是HTML <span>1</span></a>
+                        <a href="#lebal"> HTML标签 <span>2</span> </a>
+                        <a href="#element"> HTML元素 <span>3</span> </a>
+                        <a href="#base"> HTML基础 <span>4</span> </a>
+                        <a href="#rule"> HTML元素语法 <span>5</span> </a>
+                        <a href="#p"> HTML段落语法 <span>6</span> </a>
+                        <a href="#attr"> HTML属性 <span>7</span> </a>
+                        <a href="#title"> HTML标题 <span>8</span> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 页脚 -->
+        <footer>
+            <div class="credit">created by <span>小宇</span> | 暨南大学 软件工程 2020101642</div>    
+        </footer>
+    </body>
+</body>
+<script type="text/javascript" src="./js/changenav.js"></script>
+</html>

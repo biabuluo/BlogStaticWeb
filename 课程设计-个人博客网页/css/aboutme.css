@@ -1,0 +1,95 @@
+/* 标题+日期 */
+.post_info{
+    margin-top: 50px;
+    margin-left: 180px;
+    font-size: larger;
+    padding: 10px;
+}
+.post_info .date{
+    margin-top: 20px;
+    color: #ffa9a9;
+}
+.post_info .description{
+    color: #aaa9a9;
+}
+
+/* 正文部分 */
+.post{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+/* 左部 */
+.post .post_content{
+    width: 80%;
+    display: flex;
+    /* 竖向排列 */
+    flex-direction: column;
+    padding: 20px;
+}
+.post .post_content h4{
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 100px;
+    color: rgb(66, 66, 128);
+}
+.post .post_content p{
+    font-size: 20px;
+    margin-left: 200px; 
+    margin-right: 90px;   
+    color: #696969;
+}
+
+
+/* 右部 */
+.post .post_marked{
+    width: 20%;
+}
+.post .post_marked .p_box{
+    width: 250px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: sticky;
+    top: 20vh;
+    border-radius: 20px;
+    overflow:hidden;
+    background:#fff;
+    margin-right: 30px;
+}
+
+.post .post_marked .p_box .paragraph{
+    padding:20px;
+    font-size: 20px;
+    color:#fff;
+    background:#A4DEF1;
+}
+.post .post_marked .p_box .index{
+    padding:5px;
+}
+
+.post .post_marked .p_box .index a{
+    text-decoration: none;
+    padding:5px;
+    font-size: 15px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post .post_marked .p_box .index a span{
+    background: #ffa9a9;
+    color:#fff;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.post .post_marked .p_box .index a:hover{
+    color:#F8E4AD;
+}
+
+.post .post_marked .p_box .index a:hover span{
+    background-color: #F8E4AD;
+}
+
+
+

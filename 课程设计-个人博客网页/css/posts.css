@@ -1,0 +1,49 @@
+.name{
+    margin-top: 80px;
+    margin-left: 100px;
+}
+.name .prompt{
+    font-size: 50px;
+    color: #1E3E3F;
+}
+.name .description{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #ffa9a9;
+}
+
+
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+/* 文章列表 */
+.container .postbox{
+    display: flex;
+    flex-direction: row;
+    width:90%;
+    padding: 10px;
+    background:#fff;
+    border-radius: 30px;
+    border-color: #aaa9a9;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.container .postbox img{
+    width: 150px;
+    border-radius: 30px;
+}
+.container .postbox .post_info{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+}
+.container .postbox .post_info .date{
+    color: #ffa9a9;
+}
+.container.postbox .text{
+    margin: 20px;
+}

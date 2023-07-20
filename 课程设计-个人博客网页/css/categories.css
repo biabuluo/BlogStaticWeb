@@ -1,0 +1,93 @@
+
+/* 提示+搜索框 */
+.helper{
+    height: 150px;
+    display: flex;
+    place-items: center;
+    justify-content: space-evenly;
+}
+.helper .prompt h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #1E3E3F;
+}
+.helper .prompt h4{
+    font-size: larger;
+    color: #ffa9a9;
+}
+.helper .searchbar{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    place-items: center;
+    border-radius: 30px;
+    background: #1E3E3F;
+}
+.helper .searchbar .bar{
+    margin-left: 22px;
+    height: 100%;
+    background-color: #1E3E3F;
+    border: none;
+    color: #fbf9f9; 
+}
+.helper .searchbar .bar:focus{
+    outline: none;
+    /* 去掉边框 */
+}
+.helper .searchbar .btn{
+    margin-left: 10px;
+}
+.helper .searchbar .btn img{
+    width: 30px;
+}
+
+
+/* 博客分类框 */
+.content{
+    margin: 40px;
+    margin-left: 100px;
+    /* 网格布局 */
+    display: grid;
+    /* 列轨道三等分 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 行轨道固定高 */
+    grid-auto-rows: 500px;
+}
+
+.content .category_box{
+    width: 80%;
+    height: 80%;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 20%;
+    box-shadow:  0 .5rem 1rem rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.content .category_box h3{
+    width: 30%;
+    margin-left: 35%;
+    font-size: 28px;
+    color: #1E3E3F;
+}
+.content .category_box .info{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.content .category_box .info .date{
+    color: #ffa9a9;
+}
+.content .category_box img{
+    margin-top: 20px;
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.content .category_box h4{
+    margin-top: 10px;
+}
+.content .category_box h4 span{
+    color: #ffa9a9;
+}
+

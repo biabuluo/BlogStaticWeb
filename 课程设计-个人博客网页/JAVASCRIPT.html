@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于js</title>
+    <link type="text/css" rel="stylesheet" href="./css/aboutme.css">
+    <link type="text/css" rel="stylesheet" href="./css/header_footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/short_banner.css">
+</head>
+<body>
+    <body>
+        <!-- 页眉区 -->
+        <header class="header" id="header_af_login">
+            <h3>小宇の万事屋</h3>
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="./main.html">home</a>
+                <a href="./aboutme.html">about</a>
+                <a href="./categories.html">categories</a>
+                <a href="./photos.html">photos</a>
+                <a href="./music.html">music</a>
+                <a href="./bilibili.html">bilibili</a>
+            </nav>
+            <a href="./login.html">exit</a>
+        </header>
+    
+
+        <header class="header" id="header_bf_login">
+            <h3>小宇の万事屋</h3>
+            <!-- 首页导航栏！ -->
+            <nav class="navbar">
+                <a href="./login.html">login</a>
+                <a href="./aboutme.html">about</a>
+                <a href="./posts.html">public</a>
+            </nav>
+        </header>
+
+        <!-- banner块 -->
+        <section class="banner" id="banner"></section>
+    
+        <!-- post标题+日期等 -->
+        <section class="post_info">
+            <h1 class="title">关于js</h1>
+            <h3 class="date">2023/5/17</h3>
+            <h4 class="description">学习js笔记</h4>
+        </section>
+    
+        <!-- 正文部分 -->
+        <!-- 按一行两列布局：左边正文 右边为节 -->
+        <section class="post">
+            <!-- 正文 -->
+            <div class="post_content">
+                <h4><a name="what">js语法</a></h4>
+                <p>JavaScript 是一个脚本语言。</p>
+                <p>它是一个轻量级，但功能强大的编程语言。</p>
+                <p>&#11088;JavaScript 字面量</p>
+                <p>在编程语言中，一般固定值称为字面量，如 3.14。</p>
+                <p>数字（Number）字面量 可以是整数或者是小数，或者是科学计数(e)。</p>
+                <p>&#11088;操作 HTML 元素</p>
+                <p>如需从 JavaScript 访问某个 HTML 元素，您可以使用 document.getElementById(id) 方法。</p>
+                <p>请使用 "id" 属性来标识 HTML 元素，并 innerHTML 来获取或插入元素内容。</p>
+                <h4><a name="bg">js简介</a></h4>
+                <p>JavaScript 是脚本语言</p>
+                <p>CSS属性定义背景的效果，以下为背景的常用属性值：</p>
+                <p>&#11088;JavaScript 是可插入 HTML 页面的编程代码。</p>
+                <p>&#11088;JavaScript 插入 HTML 页面后，可由所有的现代浏览器执行。</p>
+                <p>&#11088;JavaScript 很容易学习。</p>
+
+
+                <h4><a name="output">js输出</a></h4>
+                <p>JavaScript 显示数据</p>
+                <p>JavaScript 可以通过不同的方式来输出数据：</p>
+                <p>&#11088;使用 window.alert() 弹出警告框。</p>
+                <p>&#11088;使用 document.write() 方法将内容写到 HTML 文档中。</p>
+                <p>&#11088;使用 innerHTML 写入到 HTML 元素。</p>
+                <p>&#11088;使用 console.log() 写入到浏览器的控制台。</p>
+
+                <h4><a name="sentence">js语句</a></h4>
+                <p>JavaScript 语句</p>
+                <p>&#11088;JavaScript 语句是发给浏览器的命令。</p>
+                <p>&#11088;下面的 JavaScript 语句向 id="demo" 的 HTML 元素输出文本 "你好 Dolly" ：</p>
+                <p><br>document.getElementById("demo").innerHTML = "你好 Dolly";<br></p>
+
+                <h4><a name="rule">js用法</a></h4>
+                <p>JavaScript函数和事件：</p>
+                <p>&#11088;通常，我们需要在某个事件发生时执行代码，比如当用户点击按钮时。</p>
+                <p>&#11088;如果我们把 JavaScript 代码放入函数中，就可以在事件发生时调用该函数。</p>
+                <p>外部的 JavaScript：</p>
+                <p>&#11088;可以把脚本保存到外部文件中。外部文件通常包含被多个网页使用的代码。</p>
+                <p>&#11088;外部 JavaScript 文件的文件扩展名是 .js。</p>
+                <p>&#11088;如需使用外部文件，请在 &ltscript&gt 标签的 "src" 属性中设置该 .js 文件：</p>
+                <p>&#11088;下方实例将会从外部的js文件夹中引入一个名为js_usage_detail_6.js的js文件。</p>
+                <p><br>&ltscript src="js/js_usage_detail_6.js"&gt&lt/script&gt<br></p>
+            </div>
+            <!-- 章节 -->
+            <div class="post_marked">
+                <div class="p_box">
+                    <h3 class="paragraph">索引</h3>
+                    <div class="index">
+                        <a href="#what"> js语法 <span>1</span></a>
+                        <a href="#bg"> js简介 <span>2</span> </a>
+                        <a href="#selector">js输出 <span>3</span> </a>
+                        <a href="#create"> js语句 <span>4</span> </a>
+                        <a href="#rule"> js用法 <span>5</span> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 页脚 -->
+        <footer>
+            <div class="credit">created by <span>小宇</span> | 暨南大学 软件工程 2020101642</div>    
+        </footer>
+    </body>
+</body>
+<script type="text/javascript" src="./js/changenav.js"></script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <!-- 外部样式表 -->
+    <link type="text/css" rel="stylesheet" href="./css/header_footer.css">
+    <link type="text/css" rel="stylesheet" href="./css/music.css">
+</head>
+<body>
+    <!-- 页眉区 -->
+    <header class="header">
+        <h3>小宇の万事屋</h3>
+        <!-- navbar -->
+        <nav class="navbar">
+            <a href="./main.html">home</a>
+            <a href="./aboutme.html">about</a>
+            <a href="./categories.html">categories</a>
+            <a href="./photos.html">photos</a>
+            <a href="#">music</a>
+            <a href="./bilibili.html">bilibili</a>
+        </nav>
+        <a href="./login.html">exit</a>
+    </header>
+    
+    <!-- 内容 -->
+    <section class="background"></section>
+    <div class="music_box">
+        <div class="left">
+            <div class="logo"><img src="./resource/icons/音乐.png">music</div>
+            <div class="music_picture"> </div>
+            <div class="volunm">
+                <div class="value">20</div>
+                <div class="volunm_bar">
+                    volunm
+                    <input class="v_bar" type="range" min="0" max="100" value="0" step="1">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h1 class="title">Song Name</h1>
+            <h3 class="author">author</h3>
+            <div class="control_btn">
+                <div class="last">
+                    <img src="./resource/icons/上一首.png" alt="last">
+                </div>
+                <div class="pause">
+                    <img src="./resource/icons/暂停.png" alt="last">
+                </div>
+                <div class="next">
+                    <img src="./resource/icons/下一首.png" alt="last">
+                    
+                </div>
+            </div>
+            <div class="auto"><span>auto play</span><img src="./resource/icons/autoplay.png"></div>
+            <div class="progress_bar">
+                <input class='p_bar' type="range" min="0" max="100" value="0" step="1">
+            </div>
+        </div>
+    </div>
+
+    <!-- 音乐播放器 -->
+    <audio controls="controls" class="player"></audio>
+    
+    <!-- 页脚 -->
+    <footer>
+        <div class="credit">created by <span>小宇</span> | 暨南大学 软件工程 2020101642</div>    
+    </footer>
+</body>
+
+    <!-- 外部js文件 -->
+    <script type="text/javascript" src="./js/music_player.js"></script>
+</html>

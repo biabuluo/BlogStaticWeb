@@ -1,0 +1,15 @@
+/* backtotop样式 */
+.backtotop{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    right: 10px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: #aaa9a9;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    cursor: pointer;
+}
